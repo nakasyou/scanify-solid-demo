@@ -1,0 +1,17 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- くりぬく形状を定義 -->
+  <clipPath id="clipPath">
+    <path d="M 100,10
+             L 200,190
+             L 10,190
+             Z" />
+  </clipPath>
+
+  <!-- くりぬかれるパス -->
+  <path d="M 10,10
+           L 100,190
+           L 190,10
+           Z"
+        clip-path="url(#clipPath)"
+        fill="red" />
+</svg>
